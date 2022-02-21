@@ -1,0 +1,217 @@
+html{
+    min-height: 100%;
+}
+
+
+body{
+    background-image: linear-gradient(to bottom,yellow,red);
+    min-height: 100%;
+    min-width: 100%;
+    color: white;
+    overflow-x: hidden;
+    font-family: "Apple Braille";
+}
+
+/*@media screen and (max-width: 1000px){
+    body{
+        overflow-x:visible;
+    }
+}*/
+
+a{
+    color: cyan;
+}
+
+.mainNavbar{
+    margin-top: 5%;
+    background: red;
+    /*box-shadow: 0 0 20px red ;*/
+}
+
+.nav-logo{
+    margin-left: 1%;
+    background:brown;
+    color: white;
+}
+
+.logo{
+    color: white;
+    list-style-type: none;
+}
+
+
+.nav-item{
+    background:linear-gradient(to bottom,lightcoral,darkorange) ;
+}
+
+.nav-link{
+    color: white;
+}
+
+
+.Intro{
+    float: left;
+    margin-left: 2%;
+    width: 34%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    height: 400px;
+    color:black;
+}
+
+.First_row{
+    margin-top:2%;
+    height:400px;
+}
+
+
+
+.Intro h1{
+    text-align: center;
+}
+
+
+.slides{
+    float: left;
+    width: 58%;
+    margin-right: 2%;
+    margin-left: 4%;
+}
+
+.a_slide{
+    height:400px;
+    width: 80%;
+}
+
+.Second_Row{
+    margin-top: 2%;
+    height: 250px;
+
+}
+
+.Problem{
+    float: left;
+    margin-left: 2%;
+    width: 35%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    height: 220px;
+    color:black;
+}
+
+.Solution{
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    height: 220px;
+    color:black;
+
+}
+
+.Solution h1, .Problem h1{
+    text-align: center;
+}
+
+
+.Market_Research{
+    float: left;
+    margin-left: 6%;
+    width: 34%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    height: 700px;
+    color:black;
+}
+
+.First_row_research{
+    margin-top:2%;
+    height: 800px;
+}
+
+.Survey{
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    height: 700px;
+    color:black;
+}
+
+.Survey h1, .Market_Research h1{
+    text-align: center;
+}
+
+.First_row_Analysis{
+    margin-top: 2%;
+
+}
+
+.Personas{
+    float: left;
+    margin-left: 2%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    color:black;
+}
+
+.Personas_img{
+    height: 400px;
+    width: 500px;
+}
+
+.Personas ul{
+    list-style-type: none;
+}
+.Personas li{
+    display: inline-block;
+    width: 45%;
+    margin-top: 2%;
+}
+.Important_requirement{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+}
+
+.Important_requirement li{
+    display: list-item;
+}
+
+.Important_requirement ul{
+    list-style-type: circle;
+}
+
+.third{
+    position: relative;
+    bottom: 185px;
+}
