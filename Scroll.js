@@ -109,7 +109,7 @@ const observer4 = new IntersectionObserver(entries => {
 
     if (entry.isIntersecting) {
       img.classList.add('fade');
-      text.classList.add('come_from_left');
+     //text.classList.add('come_from_left');
       text.classList.add('growing-font');
       title.classList.add('change_color_RY');
       //console.log("yes");
@@ -118,7 +118,7 @@ const observer4 = new IntersectionObserver(entries => {
     //console.log("no more");
     // We're not intersecting, so remove the class!
     img.classList.remove('fade');
-    text.classList.remove('come_from_left');
+    //text.classList.remove('come_from_left');
     text.classList.remove('growing-font');
     title.classList.remove('change_color_RY');
   });
