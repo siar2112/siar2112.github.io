@@ -696,11 +696,11 @@ body {
   @keyframes growing-font {
     0% {
       font-size: 1px;   }
-      25% {font-size: 1px;}	
+      25% {font-size: 4px;}
 
-      50%{font-size:7px;}
+      50%{font-size:8px;}
 
-      75%{font-size:12px;}      
+      75%{font-size:12px;}
 
       100% {
         font-size: 16px;   }
