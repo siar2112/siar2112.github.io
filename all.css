@@ -936,14 +936,22 @@ body {
 
                                                 @media screen and (max-width: 1000px) {
                                                   #Barbers_list {
-                                                    display: block;   }
+                                                    display: grid;   }
                                                     #Barbers_list li {
                                                       text-align: center;
                                                       padding-bottom: 5%;
-                                                      margin-left: 0;  }
-                                                      #Barbers_list li img {
-                                                        width: 300px;
-                                                        height: 450px;   }
+                                                      padding-right: 2%;   }
+                                                      #Barbers_list li:first-child {
+                                                        grid-row: 1;   }
+                                                        #Barbers_list li:nth-child(2) {
+                                                          grid-row: 1;   }
+                                                          #Barbers_list li:nth-child(3) {
+                                                            grid-row: 2;   }
+                                                            #Barbers_list li:nth-child(4) {
+                                                              grid-row: 2;   }
+                                                              #Barbers_list li img {
+                                                                width: 300px;
+                                                                height: 450px;   }
 }
 
 #Barbers_list li:first-child img:hover {
