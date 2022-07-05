@@ -137,7 +137,7 @@ body {
                                                         grid-row-end: 6; }
 
                                                         .carousel-caption {
-                                                          margin-right: 50%; }
+                                                          color: goldenrod; }
 
                                                           .scroll_down {
                                                             writing-mode: vertical-rl;
@@ -894,3 +894,68 @@ body {
 
                             .Email_Form {
                               padding-bottom: 10%; }
+
+                              #Barbers_list {
+                                display: flex; }
+
+                                #Barbers_list li {
+                                  margin-left: 5%;
+                                  text-align: center;
+                                  opacity: 0; }
+
+                                  #Barbers_list li img {
+                                    height: 400px;
+                                    width: 250px;
+                                    display: block;
+                                    margin: 0 auto; }
+
+                                    #Barbers_list li p1 {
+                                      color: white;
+                                      font-size: 20px; }
+
+                                      #Barbers_list li:first-child {
+                                        animation: fade forwards 4s; }
+
+                                        #Barbers_list li:nth-child(2) {
+                                          animation: fade forwards 4s;
+                                          animation-delay: 1s; }
+
+                                          #Barbers_list li:nth-child(3) {
+                                            animation: fade forwards 4s;
+                                            animation-delay: 2s; }
+
+                                            #Barbers_list li:nth-child(4) {
+                                              animation: fade forwards 4s;
+                                              animation-delay: 3s; }
+
+                                              #Barber_title {
+                                                text-align: center;
+                                                color: goldenrod;
+                                                padding-bottom: 5%;
+                                                animation: title_gallery forwards 4s; }
+
+                                                @media screen and (max-width: 1000px) {
+                                                  #Barbers_list {
+                                                    display: block;   }
+                                                    #Barbers_list li {
+                                                      text-align: center;
+                                                      padding-bottom: 5%;   }
+                                                      #Barbers_list li img {
+                                                        width: 300px;
+                                                        height: 450px;   }
+}
+
+#Barbers_list li:first-child img:hover {
+  box-shadow: red 0px 0px 22px 4px; }
+
+  #Barbers_list li:nth-child(2) img:hover {
+    box-shadow: blue 0px 0px 22px 4px; }
+
+    #Barbers_list li:nth-child(3) img:hover {
+      box-shadow: darkgreen 0px 0px 22px 4px; }
+
+      #Barbers_list li:nth-child(4) img:hover {
+        box-shadow: goldenrod 0px 0px 22px 4px; }
+
+        .choose_barber {
+          text-decoration: none; }
