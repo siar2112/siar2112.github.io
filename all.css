@@ -207,6 +207,8 @@ body {
   column-gap: 100px;
   padding-bottom: 2%;
   -webkit-column-count:2;
+  -webkit-column-width:250px ;
+	-webkit-column-gap:100px ;
  }
 
   .about_us_text {
@@ -305,7 +307,9 @@ body {
     margin-left: 5%;
     margin-top: 4%;
     font-family: "Playfair Display", serif;
-    background-image: url("appt_form.png"); }
+    background-image: url("appt_form.png");
+    background-size:100% 100%;
+   }
 
     .Book_forms_titles {
       padding-top: 5%; }
@@ -408,6 +412,8 @@ body {
         column-width: 250px;
         padding-bottom: 5%;
         -webkit-column-count:2;
+        -webkit-column-width:250px ;
+
        }
 
         .Become_Barber_text {
