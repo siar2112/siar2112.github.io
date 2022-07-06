@@ -205,7 +205,9 @@ body {
   background-image: url("aboutbg.jpeg");
   column-width: 250px;
   column-gap: 100px;
-  padding-bottom: 2%; }
+  padding-bottom: 2%;
+  -webkit-column-count:2;
+ }
 
   .about_us_text {
     margin-top: 15%;
@@ -404,7 +406,9 @@ body {
         font-family: "Open Sans", sans-serif;
         background-image: url("classes_bg.png");
         column-width: 250px;
-        padding-bottom: 5%; }
+        padding-bottom: 5%;
+        -webkit-column-count:2;
+       }
 
         .Become_Barber_text {
           margin-top: 5%;
