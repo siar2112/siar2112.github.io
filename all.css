@@ -968,3 +968,10 @@ body {
 
         .choose_barber {
           text-decoration: none; }
+
+          #Excellence {
+            margin-bottom: 25%;
+            margin-right: 70%;
+            color: silver;
+            animation: fade forwards 8s;
+            font-size: 3vw; }
