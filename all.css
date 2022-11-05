@@ -825,7 +825,7 @@ body {
                                     font-size: 50px;   }
 }
 
-@media screen and (max-width: 1000px) {
+/**@media screen and (max-width: 1000px) {
   #about_us_2 {
     column-count: 1;   }
     #about_us_2 h1 {
@@ -842,7 +842,7 @@ body {
           #about_us_2 .about_us_img img {
             margin-right: 25%;
             float: right;   }
-}
+}**/
 
 @media screen and (max-width: 1000px) {
   .container {
