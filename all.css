@@ -198,80 +198,58 @@ body {
             min-height: 450px;   }
 }
 
-//About us
+.about_us {
+  padding-top: 5%;
+  font-family: "Open Sans", sans-serif;
+  background-image: url("aboutbg.jpeg");
+  display: grid;
+  padding-bottom: 2%;
+  padding-right: 12%;
+  padding-left: 8%;
+  grid-column-gap: 5%; }
 
-.about_us{
-	padding-top: 5%;
-	font-family: "Open Sans", sans-serif;
-	background-image: url("aboutbg.jpeg");
-	display: grid;
-	padding-bottom: 2%;
-	padding-right: 12%;
-	padding-left: 8%;
-	grid-column-gap: 5%;
+  .about_us_text {
+    color: white;
+    grid-column-start: 0;
+    grid-column-end: 1;
+    margin-top: 20%; }
 
-}
+    .about_us_text h1 {
+      font-size: 18px;
+      color: red; }
 
-.about_us_text{
-	color: white;
-	grid-column-start: 0;
-	grid-column-end: 1;
-	margin-top: 20%;
-}
+      .about_us_text h2 {
+        color: goldenrod; }
 
-.about_us_text h1{
-	font-size: 18px;
-	color: red;
-}
+        .about_us_img {
+          grid-column-start: 1;
+          grid-column-end: 2; }
 
-.about_us_text h2{
-	color: goldenrod;
-}
+          .about_us_img img {
+            min-height: 500px;
+            max-height: 600px;
+            will-change: transform; }
 
-.about_us_img{
-	grid-column-start: 1;
-	grid-column-end: 2;
-
-}
-
-.about_us_img img{
-	min-height: 500px;
-	max-height: 600px;
-	will-change: transform;
-}
-
-@media screen and (max-width:800px) {
-	.about_us{
-		padding-top: 10%;
-		display: block;
-	}
-	.about_us_text h1{
-		font-size: 24px;
-	}
-
-	.about_us_text p1{
-		font-size: 14px;
-	}
-
-	.about_us_text{
-		text-align: center;
-		margin-top: 0;
-      	margin-left: 0;
-		padding-right: 10%;
-		padding-left: 10%;
-	}
-
-
-	.about_us_img{
-		margin-top: 3%;
-		margin-left: 5%;
-	}
-	.about_us_img img{
-		width:350px ;
-		height:400px ;
-
-	}
-
+            @media screen and (max-width:800px) {
+              .about_us {
+                padding-top: 10%;
+                display: block;   }
+                .about_us_text h1 {
+                  font-size: 24px;   }
+                  .about_us_text p1 {
+                    font-size: 14px;   }
+                    .about_us_text {
+                      text-align: center;
+                      margin-top: 0;
+                      margin-left: 0;
+                      padding-right: 10%;
+                      padding-left: 10%;   }
+                      .about_us_img {
+                        margin-top: 3%;
+                        margin-left: 5%;   }
+                        .about_us_img img {
+                          width: 350px;
+                          height: 400px;   }
 }
 
 .style_img ul {
@@ -332,8 +310,7 @@ body {
     margin-top: 4%;
     font-family: "Playfair Display", serif;
     background-image: url("appt_form.png");
-    background-size:100% 100%;
-   }
+    background-size: 100% 100%; }
 
     .Book_forms_titles {
       padding-top: 5%; }
@@ -433,12 +410,11 @@ body {
         padding-top: 2%;
         font-family: "Open Sans", sans-serif;
         background-image: url("classes_bg.png");
+        background-size: 100% 100%;
         column-width: 250px;
         padding-bottom: 5%;
-        -webkit-column-count:2;
-        -webkit-column-width:250px ;
-
-       }
+        -webkit-column-count: 2;
+        -webkit-column-width: 250px; }
 
         .Become_Barber_text {
           margin-top: 5%;
@@ -824,25 +800,6 @@ body {
                                     color: goldenrod;
                                     font-size: 50px;   }
 }
-
-/**@media screen and (max-width: 1000px) {
-  #about_us_2 {
-    column-count: 1;   }
-    #about_us_2 h1 {
-      font-size: 30px;   }
-      #about_us_2 .about_us_text {
-        text-align: center;
-        margin-top: 0;
-        margin-left: 0;
-        padding-right: 10%;
-        padding-left: 10%;
-        font-size: 24px;   }
-        #about_us_2 .about_us_img {
-          margin-top: 3%;   }
-          #about_us_2 .about_us_img img {
-            margin-right: 25%;
-            float: right;   }
-}**/
 
 @media screen and (max-width: 1000px) {
   .container {
