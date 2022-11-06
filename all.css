@@ -480,52 +480,10 @@ body {
 }
 
 /*Insta gallery*/
-.instagram_clips{
-    list-style-type: none;
-    display: grid;
-    grid-row-gap: 5%;
-    grid-column-gap: 5%;
+.instagram_clips blockquote{
+    display: inline-block;
 }
 
-.instagram_clips li:nth-child(1){
-    grid-column-start: 0;
-    grid-column-end:1 ;
-    grid-row-start: 0;
-    grid-row-end: 1;
-}
-.instagram_clips li:nth-child(2){
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 0;
-    grid-row-end: 1;
-
-}
-.instagram_clips li:nth-child(3){
-    grid-column-start: 0;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-.instagram_clips li:nth-child(4){
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.instagram_clips li:nth-child(5){
-    grid-column-start: 0;
-    grid-column-end: 1;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.instagram_clips li:nth-child(6){
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
 
 .see_more {
   border-radius: 30px;
