@@ -482,6 +482,7 @@ body {
 /*Insta gallery*/
 .instagram_clips blockquote{
     display: inline-block;
+    margin-right:10%;
 }
 
 
