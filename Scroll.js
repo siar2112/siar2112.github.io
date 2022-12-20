@@ -2,126 +2,160 @@ import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
 
 
 
-const style_img=document.querySelectorAll(".Photo_gallery img");
-console.log(style_img.length)
 
-style_img.forEach((image)=>{
-    const animated_Gallery= new ScrollTimeline({
-        scrollOffsets: [
-            {target: image, edge: "end", threshold: "0"},
-            {target: image, edge: "start", threshold: "1"}
-        ],
-    });
-    image.animate({
-        transform:[
-            "perspective(1000px) rotateX(45deg)",
-            "perspective(1000px rotate(0)"
-        ],
-        opacity:["0","1"],
-        },
-        {
-            duration:1,
-            easing:"linear",
-            timeline:animated_Gallery,
-        }
-    );
+
+
+const title=document.querySelector(".title");
+const carousel=document.querySelector(".carousel");
+const description_text =document.querySelector('.Description_text');
+
+
+/**const animated_title= new ScrollTimeline({
+    scrollOffsets: [
+        {target: carousel, edge: "end", threshold: "1"},
+        {target: carousel, edge: "start", threshold: "0"}
+    ],
 });
 
 
 
-/**style_img.animate({
-        transform: [
-            "perspective(1000px) rotateX(45deg)",
-            "perspective(1000px) rotate(0)",],
-        opacity:["0",1],
-},
-{
-    duration:1,
-    easing:"linear",
-    timeline:style_img_timeline,
-}
+title.animate({
+    color:['goldenrod','white'],
+    },
+    {
+        duration:4,
+        easing:"linear",
+        timeline:animated_title
+    }
 );**/
 
+/**var windowHeight = window.innerHeight;
+var windowWidth = window.innerWidth;
+var scrollArea = 1000 - windowHeight;
+var titleYpos=title.getBoundingClientRect().top;
+var headerYpos=header_point.getBoundingClientRect().top;
+
+
+
+window.addEventListener('scroll', function() {
+    //var scrollTop = window.pageYOffset || window.scrollTop;
+    var scrollTop = window.pageYOffset || title.scrollTop;
+    var scrollPercent = scrollTop/scrollArea || 0;
+    var aim=scrollPercent*window.innerHeight + 'px';
+    console.log(aim);
+    console.log(titleYpos);
+    title.style.top =scrollPercent*window.innerHeight + 'px';
+    if(title.getBoundingClientRect().top<titleYpos){
+        title.style.top=titleYpos;
+    }
+    if(title.getBoundingClientRect().top>headerYpos){
+        title.style.top=headerYpos;
+    }
+    //title.style.top =scrollPercent*window.innerHeight + 'px';
+    //square2.style.left = 800 - scrollPercent*window.innerWidth*0.6 + 'px';
+});**/
+
+const mainTitle = document.querySelector('.title');
 
 const observer1 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    const text = entry.target.querySelector('.about_us_text');
-    const image=entry.target.querySelector('.about_us_img');
+    const d_text = entry.target.querySelector('.Description_text');
 
     if (entry.isIntersecting) {
-      text.classList.add('rotate');
-      image.classList.add('fade');
+      console.log("yes");
+      d_text.classList.add('get_bigger');
       //console.log("yes");
 	  return; // if we added the class, exit the function
     }
     //console.log("no more");
     // We're not intersecting, so remove the class!
-    text.classList.remove('rotate');
-    image.classList.remove('fade');
+    d_text.classList.remove('get_bigger');
   });
 });
 
-observer1.observe(document.querySelector('.about_us'));
+observer1.observe(document.querySelector('.Description'));
 
 
 const observer2 = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    const style_img = entry.target.querySelector('.style_img ul');
+    const latest_Merch_title = entry.target.querySelector('.Latest_Merch_title');
+
+    const latest_Merch_container_1 = entry.target.querySelector('.Latest_Merch_container:nth-child(1)');
+    const latest_Merch_container_2 = entry.target.querySelector('.Latest_Merch_container:nth-child(2)');
+    const latest_Merch_container_3 = entry.target.querySelector('.Latest_Merch_container:nth-child(3)');
+    const latest_Merch_container_4 = entry.target.querySelector('.Latest_Merch_container:nth-child(4)');
+    const latest_Merch_container_5 = entry.target.querySelector('.Latest_Merch_container:nth-child(5)');
 
     if (entry.isIntersecting) {
-      style_img.classList.add('come_from_left');
       console.log("yes");
-	  return; // if we added the class, exit the function
-    }
-    console.log("no more");
-    // We're not intersecting, so remove the class!
-    style_img.classList.remove('come_from_left');
-  });
-});
-
-observer2.observe(document.querySelector('.style_img'));
-
-
-
-const observer3 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const book = entry.target.querySelector('.Book_forms');
-
-    if (entry.isIntersecting) {
-      book.classList.add('fade');
+      latest_Merch_title.classList.add('typing');
+      mainTitle.classList.add('MainTitle');
+      latest_Merch_container_1.classList.add('Latest_Merch_container_animate');
+      latest_Merch_container_2.classList.add('Latest_Merch_container_animate');
+      latest_Merch_container_3.classList.add('Latest_Merch_container_animate');
+      latest_Merch_container_4.classList.add('Latest_Merch_container_animate');
+      latest_Merch_container_5.classList.add('Latest_Merch_container_animate');
       //console.log("yes");
 	  return; // if we added the class, exit the function
     }
     //console.log("no more");
     // We're not intersecting, so remove the class!
-    book.classList.remove('fade');
+    latest_Merch_title.classList.remove('typing');
+    mainTitle.classList.remove('MainTitle');
+    latest_Merch_container_1.classList.remove('Latest_Merch_container_animate');
+    latest_Merch_container_2.classList.remove('Latest_Merch_container_animate');
+    latest_Merch_container_3.classList.remove('Latest_Merch_container_animate');
+    latest_Merch_container_4.classList.remove('Latest_Merch_container_animate');
+    latest_Merch_container_5.classList.remove('Latest_Merch_container_animate');
   });
 });
 
-observer3.observe(document.querySelector('.BOOK'));
+observer2.observe(document.querySelector('.Latest_Merch'));
 
 
-const observer4 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    const title = entry.target.querySelector('.Become_Barber_text h1');
-    const text = entry.target.querySelector('.Become_Barber_text p');
-    const img = entry.target.querySelector('.Become_Barber_img');
-
-    if (entry.isIntersecting) {
-      img.classList.add('fade');
-     //text.classList.add('come_from_left');
-      text.classList.add('growing-font');
-      title.classList.add('change_color_RY');
-      //console.log("yes");
-	  return; // if we added the class, exit the function
+function changeImage(x) {
+    var theImg = document.getElementById(x);
+    //console.log(theImg.src);
+    if (theImg.src.indexOf("_f") != -1) {
+        theImg.src = theImg.src.replace("_f", "_b");
+        console.log(theImg.src);
     }
-    //console.log("no more");
-    // We're not intersecting, so remove the class!
-    img.classList.remove('fade');
-    //text.classList.remove('come_from_left');
-    text.classList.remove('growing-font');
-    title.classList.remove('change_color_RY');
-  });
-});
+    else if (theImg.src.indexOf("_b") != -1) {
+        theImg.src = theImg.src.replace("_b", "_f");
+    }
+}
 
-observer4.observe(document.querySelector('.Become_Barber'));
+//var buy_now_buttons=document.getElementsByClassName("Buy_now")
+
+function switch_link(x) {
+    var buy_now_buttons=document.getElementsByClassName("Buy_now");
+    var right_button=buy_now_buttons[x];
+    var Size_list=document.getElementsByClassName("Size_list");
+    var right_list=Size_list[x];
+    console.log(right_list);
+
+    var small=Size_list.target.querySelector("Size_list:nth-child(1)");
+    var medium=Size_list.target.querySelector("Size_list:nth-child(2)");
+    var large=Size_list.target.querySelector("Size_list:nth-child(3)");
+    var xl=Size_list.target.querySelector("Size_list:nth-child(4)");
+
+    if(small.classList.contains("active_switch")){
+        right_button.link.setAttribute('href', "https://buy.stripe.com/9AQ2bsgS069TdAk5ko");
+    }
+    else if(medium.classList.contains("active_switch")){
+        right_button.link.setAttribute('href', "https://buy.stripe.com/5kA7vM59i69T1RC8ww");
+    }
+    else if(large.classList.contains("active_switch")){
+        right_button.link.setAttribute('href', "https://buy.stripe.com/8wMcQ61X6gOxbscaEH");
+    }
+    else if(xl.classList.contains("active_switch")){
+        right_button.link.setAttribute('href', "https://buy.stripe.com/4gw8zQ8lu69T8g03ce");
+    }
+}
+
+function add_active(x){
+    var Size_list=document.getElementsByClassName("Size_list");
+    var right_list=Size_list[x];
+
+}
+
