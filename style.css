@@ -25,6 +25,12 @@ body{
     width: 100%;
 }
 
+.img_5{
+
+    width: 100%;
+}
+
+
 .img_1 img{
     width: 100%;
 }
@@ -38,5 +44,9 @@ body{
 }
 
 .img_4 img{
+    width: 100%;
+}
+
+.img_5 img{
     width: 100%;
 }
