@@ -160,6 +160,7 @@ body{
     margin-top: 430px;
     font-size: 1.7vw;
     color: rgba(32,29,36,0.9);
+    text-decoration: none;
 }
 
 #back-to-top-btn {
@@ -355,4 +356,3 @@ body{
         margin-left: 7.5%;
     }
 }
-
