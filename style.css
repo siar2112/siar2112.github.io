@@ -36,6 +36,7 @@ body{
   .navbar_1 a:hover{
     text-decoration: none;
     color: rgb(255,215,0);
+    text-shadow: 2px 2px 5px rgba(27,8,14,0.75);
   }
 
 
