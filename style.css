@@ -33,12 +33,6 @@ body{
     text-shadow: 2px 2px 5px rgba(27,8,14,0.25);
   }
 
-  .navbar_1 a:hover{
-    text-decoration: none;
-    color: rgb(255,215,0);
-    text-shadow: 2px 2px 5px rgba(27,8,14,0.75);
-  }
-
 
   .social_media_nav a:nth-child(1){
       color: rgb(59,89,152);
@@ -166,7 +160,6 @@ body{
     margin-top: 430px;
     font-size: 1.7vw;
     color: rgba(32,29,36,0.9);
-    text-decoration: none;
 }
 
 #back-to-top-btn {
@@ -283,7 +276,7 @@ body{
 
     .member_list{
         margin-top: 300px;
-        margin-left: 1.5%;
+        margin-left: 3.5%;
     }
 
     .member_item:nth-child(1){
@@ -292,12 +285,12 @@ body{
 
     .member_item:nth-child(2){
         height: 125px;
-        margin-left: 10%;
+        margin-left: 9%;
     }
 
     .member_item:nth-child(3){
         height: 100px;
-        margin-left: 10%;
+        margin-left: 9%;
     }
 }
 
@@ -363,3 +356,4 @@ body{
         margin-left: 7.5%;
     }
 }
+
