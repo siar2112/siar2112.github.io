@@ -240,6 +240,7 @@ body{
 
 
 .amed_item{
+    margin-left: 12%;
     font-size: 1.5vw !important;
     padding-right: 40% !important;
     white-space: nowrap;
